@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+    int marks, noofstudents=0;
+    float totalmarks=0, average;
+    printf("enter the marks between(0 and 100)");
+    scanf("%d",&marks);
+    while (marks >=0 && marks <=100)
+    {
+        totalmarks =totalmarks+marks;
+        noofstudents++; 
+        printf(" enter the marks between(0 and 100)");
+        scanf("%d",&marks);
+    }
+    average =totalmarks/noofstudents;
+    printf("the total marks is %.2f",totalmarks);
+    printf("the no of students:%d",noofstudents);
+    printf("the average is %.2f",average);
+}
