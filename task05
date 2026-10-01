@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main(){
+    int price, choice;
+    float totalbill=0, discount, finalbill;
+    printf("enter the price for each item");
+    scanf("%d",&price);
+    printf("do you want to order another item (1=yes,0=no)");
+    scanf("%d",&choice);
+    while (choice==1)
+    {
+       printf("enter the price for each item");
+       scanf("%d",&price);
+       printf("do you want to order another item (1=yes,0=no)");
+       scanf("%d",&choice);
+       totalbill=totalbill+price;
+    }
+    if (totalbill >5000)
+    {
+        discount=totalbill*0.05;
+    }
+    finalbill=totalbill-discount;
+    printf("the total bill is %.2f",totalbill);
+    printf("the discount is %.2f",discount);
+    printf("the final bill is %.2f",finalbill);
+    
+    
+
+}
