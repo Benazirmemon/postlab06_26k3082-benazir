@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main(){
+    float units[5];
+    float  bill, total=0, highest=0, lowest=0,totalamount, surcharge;
+    printf("enter the units for 5 households");
+    for (int i = 0; i < 5; i++)
+    {
+        printf("households %d",i+1);
+        scanf("%f",&units[i]);
+    }
+    for (int i = 0; i < 5; i++)
+    {
+       total=total+units[i];
+       if(units[i]>highest){
+        highest=units[i];
+       }
+       if(units[i]<lowest){
+       lowest=units[i];
+    }
+    bill=units[i]*10.0;
+    if (units[i]>500)
+    {
+       surcharge=bill*0.05;
+    }
+}
+totalamount=totalamount+bill;
+printf("total units%.2f",total);
+printf("hihgest units %.2f",highest);
+printf("lowest units %.2f",lowest);
+printf("total amount %.2f",totalamount);
+}
+
+    
+
+       
+    
+    
+    
