@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main(){
+    int rechargeamount, totalbalance=0, noofrechargeattemps=0;
+    printf("enter the recharge amount");
+    scanf("%d",&rechargeamount);
+    while (rechargeamount > 0)
+    {
+       totalbalance  =rechargeamount+totalbalance;
+        noofrechargeattemps++;
+        
+        if (totalbalance >5000)
+        {
+           printf("recharge limit reached");
+        }
+        printf("enter the recharge amount");
+        scanf("%d",&rechargeamount);
+    } 
+    printf("the total recharged amount is %d",rechargeamount);
+    printf("the no of recharge attemp %d",noofrechargeattemps);
+}
+
+    
+        
+
+
+      
+    
+    
